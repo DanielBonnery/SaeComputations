@@ -1,6 +1,7 @@
 require("R2jags")
 require("plyr")
 require("abind")
+require("lattice")
 library(dataBaseball)
 attach(baseball)
 m<-45
@@ -39,7 +40,7 @@ beta.1$model<-ordered(beta.1$model)
 levels(beta.1$model)<-c("Uniform prior","Gelman prior","Gamma prior")
 
 #3. Produce graphs
-lattice::densityplot(~beta.1$"beta[2]"|beta.1$model,
+plot1<-lattice::densityplot(~beta.1$"beta[2]"|beta.1$model,
             xlab="$\\beta_1$",
             par.settings=list(strip.background=list(col="blue")),
             par.strip.text=list(col="white",font=2),
@@ -47,7 +48,7 @@ lattice::densityplot(~beta.1$"beta[2]"|beta.1$model,
             panel=function(x){
               panel.densityplot(x)
               panel.abline(v=mean(x),col=couleur2)})
-lattice::densityplot(~beta.1$"A"|beta.1$model,
+plot2<-lattice::densityplot(~beta.1$"A"|beta.1$model,
             xlab="$A$",
             par.settings=list(strip.background=list(col="blue")),
             par.strip.text=list(col="white",font=2),
@@ -55,7 +56,7 @@ lattice::densityplot(~beta.1$"A"|beta.1$model,
             panel=function(x){
               panel.densityplot(x)
               panel.abline(v=mean(x),col=couleur2)})
-densityplot(~beta.1[,paste0("theta[1]")]|beta.1$model,
+plot3<-densityplot(~beta.1[,paste0("theta[1]")]|beta.1$model,
             xlab="$\\theta_i$, county with smallest s.d.",
             par.settings=list(strip.background=list(col="blue")),
             par.strip.text=list(col="white",font=2),
@@ -64,7 +65,11 @@ densityplot(~beta.1[,paste0("theta[1]")]|beta.1$model,
               panel.densityplot(x)
               panel.abline(v=mean(x),col=couleur2)})
 
+print(plot1)
+print(plot2)
+print(plot3)
 table1<-adply(do.call(abind,c(lapply(fits,function(x){x$BUGSoutput$summary[c("A","beta[2]","theta[1]"),c(1,2,5,3,7)]}),list(along=3))),c(3,1),.id=list("Model","Parameter"))
 names(table1)<-c("Model","Parameter","Mean","s.d.","median","CI-LB","CI-UB" )
 table1$Parameter<-rep(c("$A$","$\\beta_1$","Clemente"),each=3)
 table1
+
