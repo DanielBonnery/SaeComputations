@@ -1,4 +1,4 @@
-#R package of data and demo files for short courses.
+#Small Area Estimation: R package of data and demo files for short courses.
 
 This package was used at the 2015 Isi conference and 2016 Aapor conference ["Big Data for Small Areas"](http://wapor.org/wp-content/uploads/2016/02/Austin2016.pdf)
 
