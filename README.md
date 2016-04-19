@@ -9,3 +9,9 @@ There is an increasing interest in producing public opinion statistics for small
 * Why standard survey methods do not work in small area estimation (SAE).
 * Describe a few examples of big data and discuss their potential use in small area estimation.
 * How can one combine survey data with big data in improving SAE statistics?
+
+##Installation
+install.packages("devtools")
+devtools::install_github("DanielBonnery/Aapor2016Sae")
+
+
