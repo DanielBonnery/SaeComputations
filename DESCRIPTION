@@ -1,8 +1,8 @@
-Package: Aapor2016Sae
+Package: SaeComputations
 Type: Package
 Title: X
 Version: 1.0
-Date: 2016-04-18
+Date: 2016-04-19
 Author: D. Bonnery
 Maintainer: D. Bonnery  <dbonnery@umd.edu>
 Imports: sae,
@@ -11,9 +11,9 @@ Imports: sae,
 	lattice
 Suggests: 
 Description: Data
-Remotes: jyklly/Rgbp/Rgbp,
-	DanielBonnery/dataCountyCropSurveySatellite,
-	DanielBonnery/dataBaseball
+Remotes: DanielBonnery/ jyklly/Rgbp/Rgbp,
+	DanielBonnery/ DanielBonnery/dataCountyCropSurveySatellite,
+	DanielBonnery/ DanielBonnery/dataBaseball
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: true
