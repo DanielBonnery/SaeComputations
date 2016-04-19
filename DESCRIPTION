@@ -6,12 +6,13 @@ Date: 2016-04-18
 Author: D. Bonnery
 Maintainer: D. Bonnery  <dbonnery@umd.edu>
 Imports: sae,
-	R2jags
+	R2jags,
+	TANOVA
 Suggests: 
 Description: Data
-Remotes: jyklly/Rgbp/Rgbp,
-	DanielBonnery/dataCountyCropSurveySatellite,
-	DanielBonnery/dataBaseball
+Remotes: DanielBonnery/ jyklly/Rgbp/Rgbp,
+	DanielBonnery/ DanielBonnery/dataCountyCropSurveySatellite,
+	DanielBonnery/ DanielBonnery/dataBaseball
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: true
