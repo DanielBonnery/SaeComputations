@@ -1,7 +1,7 @@
 require("R2jags")
 require("plyr")
 require("abind")
-require("lattice")
+library(lattice)
 library(dataBaseball)
 attach(baseball)
 m<-45
@@ -40,7 +40,7 @@ beta.1$model<-ordered(beta.1$model)
 levels(beta.1$model)<-c("Uniform prior","Gelman prior","Gamma prior")
 
 #3. Produce graphs
-plot1<-lattice::densityplot(~beta.1$"beta[2]"|beta.1$model,
+plot1<-densityplot(~beta.1$"beta[2]"|beta.1$model,
             xlab="$\\beta_1$",
             par.settings=list(strip.background=list(col="blue")),
             par.strip.text=list(col="white",font=2),
@@ -48,7 +48,7 @@ plot1<-lattice::densityplot(~beta.1$"beta[2]"|beta.1$model,
             panel=function(x){
               panel.densityplot(x)
               panel.abline(v=mean(x),col=couleur2)})
-plot2<-lattice::densityplot(~beta.1$"A"|beta.1$model,
+plot2<-densityplot(~beta.1$"A"|beta.1$model,
             xlab="$A$",
             par.settings=list(strip.background=list(col="blue")),
             par.strip.text=list(col="white",font=2),
