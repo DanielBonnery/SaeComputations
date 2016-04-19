@@ -1,5 +1,4 @@
-library(Isi2015Sae)
-data(baseball);attach(baseball)
+library(dataBaseball);attach(baseball)
 n = nrow(baseball)
 # variable of interest, y
 hat.P.bar = mean(baseball$hat.P)
