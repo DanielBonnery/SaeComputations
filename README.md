@@ -1,4 +1,4 @@
-# Aapor 2016: Big Data for Small Areas, the R package
+#Big Data for Small Areas, Aapor2016Sae package
 Aapor2016Sae is an R package for the short course "Big Data for Small Areas"
 
 
@@ -11,8 +11,11 @@ There is an increasing interest in producing public opinion statistics for small
 * How can one combine survey data with big data in improving SAE statistics?
 
 ##Installation
-execute in R
-`install.packages("devtools")
-devtools::install_github("DanielBonnery/Aapor2016Sae")`
+execute in R:
+
+```{R}
+install.packages("devtools)"
+devtools::install_github("DanielBonnery/Aapor2016Sae")
+```
 
 
