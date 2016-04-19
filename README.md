@@ -1,4 +1,4 @@
-# Aapor 2016: Big Data for Small Areas, the R package
+#Big Data for Small Areas, Aapor2016Sae package
 Aapor2016Sae is an R package for the short course "Big Data for Small Areas"
 
 
