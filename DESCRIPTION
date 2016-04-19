@@ -9,7 +9,7 @@ Imports: sae,
 	R2jags
 Suggests: 
 Description: Data
-Remotes: jyklly/Rgbp,
+Remotes: jyklly/Rgbp/Rgbp,
 	DanielBonnery/dataCountyCropSurveySatellite,
 	DanielBonnery/dataBaseball
 License: GPL (>= 2)
