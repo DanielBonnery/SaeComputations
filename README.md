@@ -11,7 +11,8 @@ There is an increasing interest in producing public opinion statistics for small
 * How can one combine survey data with big data in improving SAE statistics?
 
 ##Installation
-install.packages("devtools")
-devtools::install_github("DanielBonnery/Aapor2016Sae")
+execute in R
+`install.packages("devtools")
+devtools::install_github("DanielBonnery/Aapor2016Sae")`
 
 
