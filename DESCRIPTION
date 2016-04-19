@@ -7,7 +7,8 @@ Author: D. Bonnery
 Maintainer: D. Bonnery  <dbonnery@umd.edu>
 Imports: sae,
 	R2jags,
-	TANOVA
+	TANOVA,
+	lattice
 Suggests: 
 Description: Data
 Remotes: jyklly/Rgbp/Rgbp,
