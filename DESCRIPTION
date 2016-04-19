@@ -10,9 +10,9 @@ Imports: sae,
 	TANOVA
 Suggests: 
 Description: Data
-Remotes: DanielBonnery/ jyklly/Rgbp/Rgbp,
-	DanielBonnery/ DanielBonnery/dataCountyCropSurveySatellite,
-	DanielBonnery/ DanielBonnery/dataBaseball
+Remotes: jyklly/Rgbp/Rgbp,
+	DanielBonnery/dataCountyCropSurveySatellite,
+	DanielBonnery/dataBaseball
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: true
