@@ -17,5 +17,13 @@ execute in R:
 install.packages("devtools)"
 devtools::install_github("DanielBonnery/Aapor2016Sae")
 ```
+##Use
+```{R}
+library(Aapor2016Sae)
+demo(ADM)
+demo(EB)
+demo(EB2)
+demo(MCMC)
+```
 
 
