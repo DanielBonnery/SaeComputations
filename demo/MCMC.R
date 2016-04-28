@@ -3,6 +3,7 @@ require("plyr")
 require("abind")
 library(lattice)
 library(dataBaseball)
+data(baseball,package="dataBaseball")
 attach(baseball)
 m<-45
 #1. Run jags

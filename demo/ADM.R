@@ -27,6 +27,10 @@ X1<-g$beta.new[2,1]+x*3*sqrt(g$beta.var[2,2])
 X2<-seq(qgamma(.001,alpha,rate=beta),qgamma(.999,alpha,rate=beta),length.out=200)
 X3<-g$post.mean[1,1]+x*3*g$post.sd[1,1]
 #plot posterior densityes
+library(ggplot2)
+plot1<-ggplot(data=data.frame(x=X1,y=dnorm(X1,mean=g$beta.new[2,1],sd=sqrt(g$beta.var[2,2]))),
+              aes(x=x,y=y))+ geom_line(colour="blue",size = 1)+ labs(x = "Posterior density of $\\beta_1$",y='Density')
+print(plot1)
 par(mfrow=c(3,1))
 plot(X1,dnorm(X1,mean=g$beta.new[2,1],sd=sqrt(g$beta.var[2,2])),xlab='Posterior density of beta1',ylab='density',type='l',col="black",lwd=3)
 plot(X2,dgamma(X2,shape=alpha,rate=beta),xlab='Posterior density of A',ylab='density',type='l',col="black",lwd=3)
