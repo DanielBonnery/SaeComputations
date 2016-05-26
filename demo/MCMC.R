@@ -73,4 +73,3 @@ table1<-adply(do.call(abind,c(lapply(fits,function(x){x$BUGSoutput$summary[c("A"
 names(table1)<-c("Model","Parameter","Mean","s.d.","median","CI-LB","CI-UB" )
 table1$Parameter<-rep(c("$A$","$\\beta_1$","Clemente"),each=3)
 table1
-

@@ -1,5 +1,5 @@
 #1. Load the data package and the data
-library(dataBaseball)
+data(baseball,package=dataBaseball)
 attach(baseball)
 #2. Estimate via ADM method
 psi=hat.P*(1-hat.P)/nrow(baseball)
@@ -20,7 +20,7 @@ A.mean<-alpha/beta
 A.var<-alpha/(beta^2)
 A.sd<-sqrt(A.var)
 A.summary<-c(Mean=A.mean,sd=A.sd, qgamma(c(.5,.025,.975),shape=alpha,rate=beta))
-names(A.summary)[3:5]<-c("Median","1st Qu.","3rd Qu.")
+names(A.summary)[3:5]<-c("Median","0.025 Qu.","0.975 Qu.")
 #Definition of the x sequences for the plots 
 x=seq(-1,1,length.out=200)
 X1<-g$beta.new[2,1]+x*3*sqrt(g$beta.var[2,2])
