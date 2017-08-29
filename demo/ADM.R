@@ -37,3 +37,8 @@ plot(X2,dgamma(X2,shape=alpha,rate=beta),xlab='Posterior density of A',ylab='den
 abline(v=A.mean,lwd=3,col='gray')
 abline(v=A.summary['Median'],lwd=3,col='darkgray')
 plot(X3,dnorm(X3,mean=g$post.mean[1,1],sd=g$post.sd[1,1]),xlab='Posterior density of $theta_i$ for Clemente.',ylab='density',type='l',col="black",lwd=3)
+
+table1<-data.frame(Parameter=c("$A$","$\\beta_1$","Clemente"),
+                   rbind(A.summary[],
+                         c(sqrt(g$beta.var[2,2]),qnorm(c(.5,.5,.025,.975),g$beta.new[2,1],sqrt(g$beta.var[2,2])))[c(2,1,3:5)],
+                         signif(c(g$post.mean[1],g$post.sd[1],g$post.mean[1],g$post.intv.low[1],g$post.intv.upp[1]),3)))

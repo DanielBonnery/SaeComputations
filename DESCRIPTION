@@ -2,7 +2,7 @@ Package: SaeComputations
 Type: Package
 Title: X
 Version: 1.0 
-Date: 2016-05-26
+Date: 2017-08-28
 Author: D. Bonnery
 Maintainer: D. Bonnery  <dbonnery@umd.edu>
 Imports: sae,
@@ -19,6 +19,13 @@ Remotes: DanielBonnery/dataBeef,
 	DanielBonnery/dataCholesterol,
 	DanielBonnery/dataLaborForce,
 	jyklly/Rgbp/Rgbp
+Depends: dataBeef,
+	dataCASEN,
+	dataCountyCropSurveySatellite,
+	dataBaseball,
+	dataCholesterol,
+	dataLaborForce,
+	Rgbp
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: true
