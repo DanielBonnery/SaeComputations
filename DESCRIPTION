@@ -2,12 +2,11 @@ Package: SaeComputations
 Type: Package
 Title: X
 Version: 1.0 
-Date: 2017-08-28
+Date: 2019-02-04
 Author: D. Bonnery
 Maintainer: D. Bonnery  <dbonnery@umd.edu>
 Imports: sae,
 	R2jags,
-	TANOVA,
 	lattice,
 	hbsae
 Suggests: 
@@ -18,7 +17,8 @@ Remotes: DanielBonnery/dataBeef,
 	DanielBonnery/dataBaseball,
 	DanielBonnery/dataCholesterol,
 	DanielBonnery/dataLaborForce,
-	jyklly/Rgbp/Rgbp
+	jyklly/Rgbp/Rgbp,
+	cran/TANOVA
 Depends: dataBeef,
 	dataCASEN,
 	dataCountyCropSurveySatellite,
