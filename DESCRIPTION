@@ -13,7 +13,7 @@ Suggests:
 Description: Data
 Remotes: DanielBonnery/dataBeef,
 	DanielBonnery/dataCASEN,
-	DanielBonnery/dataCountyCropSurveySatellite,
+	#DanielBonnery/dataCountyCropSurveySatellite,
 	DanielBonnery/dataBaseball,
 	DanielBonnery/dataCholesterol,
 	DanielBonnery/dataLaborForce,
