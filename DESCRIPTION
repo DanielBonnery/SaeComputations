@@ -2,7 +2,7 @@ Package: SaeComputations
 Type: Package
 Title: X
 Version: 1.0 
-Date: 2019-02-04
+Date: 2019-02-05
 Author: D. Bonnery
 Maintainer: D. Bonnery  <dbonnery@umd.edu>
 Imports: sae,
@@ -13,7 +13,7 @@ Suggests:
 Description: Data
 Remotes: DanielBonnery/dataBeef,
 	DanielBonnery/dataCASEN,
-	#DanielBonnery/dataCountyCropSurveySatellite,
+	DanielBonnery/dataCountyCropSurveySatellite,
 	DanielBonnery/dataBaseball,
 	DanielBonnery/dataCholesterol,
 	DanielBonnery/dataLaborForce,
