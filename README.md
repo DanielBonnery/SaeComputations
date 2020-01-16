@@ -15,7 +15,7 @@ devtools::install_github("DanielBonnery/SaeComputations")
 
 ##Use
 ```{R}
-library(Aapor2016Sae)
+library(SaeComputations)
 demo(ADM)
 demo(EB)
 demo(EB2)
