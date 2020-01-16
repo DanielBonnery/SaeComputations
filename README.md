@@ -10,7 +10,7 @@ The installation of the package will also install some packages usefull for SAE 
 execute in R:
 ```{R}
 install.packages("devtools)"
-devtools::install_github("DanielBonnery/Aapor2016Sae")
+devtools::install_github("DanielBonnery/SaeComputations")
 ```
 
 ##Use
